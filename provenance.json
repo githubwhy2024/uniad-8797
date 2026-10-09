@@ -1,0 +1,131 @@
+{
+  "schema": "uniad-8797-initial-provenance-v1",
+  "source_repository": "https://github.com/githubwhy2024/uniad-export.git",
+  "source_branch": "qualcomm/q4-qnn-baseline",
+  "source_commit": "45df36449e38fa22eeee13c2337e8fd281edd784",
+  "source_tree": "569a2d90a4ef1961a344f4d84da054e8532dd054",
+  "prepared_in_worktree": true,
+  "published_history": "new root commit; Q4 source identity retained here",
+  "removed_groups": {
+    "onnx/Q4_ARCHITECTURE_COMPLETION.md": 1,
+    "onnx/Q4_ARCHITECTURE_PLAN.md": 1,
+    "onnx/Q4_COMPLETION_TABLE.md": 1,
+    "onnx/Q4_FOLLOWUP_PLAN.md": 1,
+    "onnx/Q4_HANDOFF.md": 1,
+    "onnx/Q4_HANDOFF_HISTORY.md": 1,
+    "onnx/Q4_PERFORMANCE_PLAN.md": 1,
+    "onnx/Q4_PLAN.md": 1,
+    "onnx/Q4_POLICY_HISTORY.md": 1,
+    "onnx/Q4_PRE_COMPLETION_HISTORY.md": 1,
+    "onnx/Q4_REPLAY_GUIDE.md": 1,
+    "onnx/Q4_REVIEW_DISPOSITION.md": 1,
+    "onnx/Q4_TO_8797_GUIDE.md": 1,
+    "onnx/qnn": 1,
+    "onnx/runs": 25850,
+    "onnx/validation": 38
+  },
+  "removed_files": 25902,
+  "adapters": {
+    "frame_feed": {
+      "path": "onnx/reference/adapters/frame_feed.py",
+      "sha256": "a5d737e69e428b2fe0453a7692fae5f258882f3f87e1094713e559f8b0d9827f",
+      "source_file": "run_q3_fixed_candidate_mini_ort.py",
+      "original_source_sha256": "05301901668189b6ef31e411fafaa059719fe2c19b3949d0f2a62bf330117a24",
+      "ast_sha256": "41965598f8460bdc3988eadf5f9acfd1fd9805a4c43a8d864d2c4fd0cebd58ec"
+    },
+    "logical_task_view": {
+      "path": "onnx/reference/adapters/logical_task_view.py",
+      "sha256": "8a32721e7df59bdcf620f33f843279ae3950c675fe51d3fbe159fd744468c7a0",
+      "source_file": "run_q3_fixed_shape_mini_pt.py",
+      "original_source_sha256": "0239a7b892dd4486bebd34d60bddea5c8054c9d5aec82a09a4f0e5d47b0364da",
+      "ast_sha256": "25133752bab0f99a125608697f499027cc8ba238639e53186547fe72988d17bb"
+    },
+    "metric_control": {
+      "path": "onnx/reference/adapters/metric_control.py",
+      "sha256": "330ce3eaceb4b5d32e4a7e3673d7d571cdad66dde7ed75a5ba30f3fb60d8850c",
+      "source_file": "run_q3_fixed_saved_task_evaluation.py",
+      "original_source_sha256": "f6f9fd18a9e0b1a41dee230e747e799869e836736087fa00d43bcb59618503e4",
+      "ast_sha256": "02df408b4b446e3d8ab1ea4a6f3c27c5056ad144d78ee894590d4e7f47b6178c"
+    }
+  },
+  "models": {
+    "planning_model": "0202b4e2ce5bff2ce94ef04447efcbbe581c73b54e263d4922aefc44f0c01812",
+    "full_model": "3b78366c417fef5d1c23221e7356fa77104b5a991cbe4c81aed697bc90bdeff5",
+    "initial_state": "3dab828883a693809fc3dbf2b4b6bfd6030d0ffdb0dca9ae041be46f017b054f",
+    "shape_proof": "446c00500e611d89dd60f05bf70cbeee4755f60d047cd1aaa4446ff2e909920f",
+    "extent_certificate": "ab5b64dee959e4bdcdedbf668454a1063e40030cfbb7c185ca2ddb7d26e215fa",
+    "collision_optimizer": "4aabdc6772953d5dd6ad31e1923a628a3c14b8cb085ad92eb8a95ea2cdf532c3",
+    "checkpoint": "60d8cdc82b5c3bf2bd18c52992454231f0f8d7427ba686babe89da9f476b1bbe",
+    "motion_anchor": "05c84020204841eb45a1599228e4452b021213a83d8f7a63b40b47531f0cac6b"
+  },
+  "source_licenses": [
+    "LICENSE",
+    "onnx/QUALCOMM_THIRD_PARTY_LICENSE.txt"
+  ],
+  "acceptance": {
+    "planning_model": "frozen logical planning reference",
+    "full_model": "frozen full evaluation reference",
+    "selected_three_part_host": "candidate; full task not_evaluated",
+    "target_8797": "not_evaluated"
+  },
+  "host_environment_reference": {
+    "sdk_release": "2.42.0.251225",
+    "sdk_build": "v2.42.0.251225135753_193295",
+    "configuration": "per-machine Conda hooks or explicit environment variables; no developer install paths",
+    "target_acceptance": "not_evaluated"
+  },
+  "initialization_corrections": {
+    "onnx/validation/validate_native_session.py": {
+      "upstream_q4_snapshot_sha256": "e285d2a45697228e1698125349a643016f2f4f26ab480ff1da63304ce8860bb4",
+      "initial_q5_sha256": "bd4e2c820d474d7ca99c1bcc57a2542e50753946869a90ca3b0fa4443f4f8b13"
+    },
+    "onnx/validation/validate_borrowed_session.py": {
+      "upstream_q4_snapshot_sha256": "8fbb3acac9ad8b85d59cd1896436f509ad973926231ccb00a6eebea743c64bdf",
+      "initial_q5_sha256": "5010df5d5705d4e4691c3177659d10d0934354e0ab78e490437a1389b0ba0ff4"
+    },
+    "onnx/validation/validate_partition_bundle.py": {
+      "upstream_q4_snapshot_sha256": "c732af27a07b8cec4f8b1d13669de47d9a7f7e6db624e05b931870532c29c072",
+      "initial_q5_sha256": "e959ea31f408523f9ec10f6cfc5d95a53133bc4c5d46410142b1f057ae141779"
+    },
+    "onnx/validation/validate_planning_bundle.py": {
+      "upstream_q4_snapshot_sha256": "3fc62b9584cf7db960b9e50e43968d3bd5980a00ac102bcf9044bbc451245d5c",
+      "initial_q5_sha256": "b9ad1526a4e782d114c1ea17009b4dd0ad0c5f9bad21ce4905e8a4b3b81f3418"
+    },
+    "onnx/validation/validate_planning_neural_bundle.py": {
+      "upstream_q4_snapshot_sha256": "f90ec4ce292b001857cfc7845f0fa2dd4e6445cb8a04b5f3b831f9804b1b84f0",
+      "initial_q5_sha256": "db82047fab2e82a5b1284339e3d2b6f5d3033da505f781d1fd9d1b95a7a5cb99"
+    },
+    "onnx/validation/package_planning.py": {
+      "upstream_q4_snapshot_sha256": "8c38ebdf08801e9c361a2a7946d0d91fc30b89377c23b3cbb071ac958588e4e7",
+      "initial_q5_sha256": "0763c00493a031c7dc0806b2a7044bc95b0271f1ddda70551bb4f129cfd64d5b"
+    },
+    "onnx/qnn/audit_converter.py": {
+      "upstream_q4_snapshot_sha256": "dc67c731ea6b9fe700f4913a07b981b61fff54a8e78af2e4aa26ef32ef0333cb",
+      "initial_q5_sha256": "46570c4d9a05fa3894c2608558c11c3cfd957671b3538dfc71d32f4abd9be994"
+    },
+    "onnx/qnn/tool_run.py": {
+      "upstream_q4_snapshot_sha256": "0b879f9a502a69c33aec02bff90277beb6c3f75207777056a108d8100251f26d",
+      "initial_q5_sha256": "b4629dfdccb499670195583044cea3895e4affb05a934436513b09d86f0bb0b5"
+    },
+    "onnx/qnn/resources.py": {
+      "upstream_q4_snapshot_sha256": "541c193b84549abf99d1b6913aed3de83be47ad9af996974a98aad4fc834f78e",
+      "initial_q5_sha256": "adbb5f0e9cb247e8ddc0380b9cda01f908ffbedd6a5d2ab3e873afb30b5934d9"
+    },
+    "onnx/qnn/partition_session.py": {
+      "upstream_q4_snapshot_sha256": "b1f514a75d7dad0d0b28f2061b4445e12c47fd9e98c67faac8ad74dcf38ea59b",
+      "initial_q5_sha256": "85872738d459e8c009359e60fced3903fc037ba8fbbd6d53b418ce4040614935"
+    },
+    "onnx/qnn/diagnose_converter.py": {
+      "upstream_q4_snapshot_sha256": "c0729823b94c3c655b9686ab6b303efd498ca240a8e1144174e52ed26418144f",
+      "initial_q5_sha256": "664ed843f8a922371d2f3a4734a4128a9dc198894509aa99b0692dfde22f71cd"
+    },
+    "onnx/qnn/build_bridge.py": {
+      "upstream_q4_snapshot_sha256": "9d9a5e544a2128cf94809132ca0d28869a76305f1cf0c2289d0bab483bde29c3",
+      "initial_q5_sha256": "5d97d73079f603ef67c28caf0c13069e208ba1b7be765b8ee1cbc55247532741"
+    },
+    "onnx/qnn/env.sh": {
+      "upstream_q4_snapshot_sha256": "104449be97c98b466b15b1e35d2ace74701d426483a77e25fb6f0d089f840bbd",
+      "initial_q5_sha256": "8ed9ffd41d9f04f9b81fd0e18bfd4ab91c7bf8122de8408ec011646e3499881a"
+    }
+  }
+}

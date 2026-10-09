@@ -1,0 +1,46 @@
+{
+  "role": "refactor_dynamic",
+  "refactor_freeze_commit": "5815d68aa831e144d91143fb43ee1cfbacf9767f",
+  "files": {
+    "attention.py": "2fa5277f4ad34a27004b65b298f0fdf88fbc4ba74e13b1de7579cbe90084cc6c",
+    "dcnv2.py": "4d78248a520e1ba449391ed2f1449bab692a55327719eeea0ca73cef3b261f70",
+    "frame_core.py": "14f3abc066f4a0695291ddbf34346c87c3e6378fb56ecbc57361f1bea163c0e1",
+    "model_patches.py": "2b505c6d8b74db7c84daeeec408cc213b36def153347298f6fbd5a963635a497",
+    "temporal.py": "341dd27e6a6a115e06ee350d61cfb1f464b351607285d1b763d8110f9cd3129c",
+    "state_contract.py": "4bf9819337f1b24b06b22d82dfa971f3ea92db4eb7b03ce4dd49c8dced39abc8",
+    "host.py": "c6a32f8dfe94f5f8ea0b9e460b30f8d9476c245dd5048d2b9a0bc629d3274f28",
+    "export.py": "2db2c9420469fd1d62c9346f23fc020ac6e4ec9f364e2b13d149b0560d364694",
+    "assets.py": "671fbe44632173c80994240d656e1d9f269947e885e1b624a710728eb12b6502",
+    "prepare_scene.py": "0098c5db47d417c51e73a4ffab1e4e12519ebd26a2a0a6c409720c25322baa28",
+    "validate.py": "1dbfcedffd295600efcb36aaf8ac37d944e2e7b04db0fc9b86377a77de4bb5d2",
+    "check_host.py": "87ffef83811c7be4a7261f26687a35f5bc6d884f78828e046797a74a75387c8e",
+    "verify_refactor.py": "b304838d428959771c2b38cf8f1e712d1b55d89691a48a34c2829523615f7a99"
+  },
+  "root_uniad_sources": {
+    "projects/mmdet3d_plugin/uniad/dense_heads/track_head.py": "22a0427afb3a7ef81897f6f05a0155dee3db312a9a925635c0517f859cfe1815",
+    "projects/mmdet3d_plugin/uniad/dense_heads/occ_head.py": "e05d9463ca04b4efa3c32f011b3a220bd437758c94846b9f84a60f70ab19f877"
+  },
+  "refactor_original_sha256": {
+    "attention.py": "2fa5277f4ad34a27004b65b298f0fdf88fbc4ba74e13b1de7579cbe90084cc6c",
+    "dcnv2.py": "4d78248a520e1ba449391ed2f1449bab692a55327719eeea0ca73cef3b261f70",
+    "frame_core.py": "14f3abc066f4a0695291ddbf34346c87c3e6378fb56ecbc57361f1bea163c0e1",
+    "model_patches.py": "2b505c6d8b74db7c84daeeec408cc213b36def153347298f6fbd5a963635a497",
+    "temporal.py": "341dd27e6a6a115e06ee350d61cfb1f464b351607285d1b763d8110f9cd3129c",
+    "state_contract.py": "4bf9819337f1b24b06b22d82dfa971f3ea92db4eb7b03ce4dd49c8dced39abc8",
+    "host.py": "27acd2d8985f22888def5b501da410cd65f9140fc3ed53c6c1b599a3a6f1c6c8",
+    "export.py": "258612b544389b38c6c6d1ec1e09cf93b40fa36d38f3ceda4029627e8a497ccd",
+    "assets.py": "6bd95f5c8ceca21f33f29e83fe778d2978b964fbeeaf605a91c7b842d8060515",
+    "prepare_scene.py": "0098c5db47d417c51e73a4ffab1e4e12519ebd26a2a0a6c409720c25322baa28",
+    "validate.py": "66caaa3a8713ca5ecf1e68a6740a1123cbdef5fd4e67fd65542a051516dba150",
+    "check_host.py": "c6351545fe575d2d56a97fdd447fac8afeb9af4476cd5a4de5e158f7d906a0fb",
+    "verify_refactor.py": "e7103781735c43b084881ab7e4929e16275471cdb2c709ed80d7b0435c5cef66"
+  },
+  "relocated_path_only": [
+    "export.py",
+    "host.py",
+    "assets.py",
+    "validate.py",
+    "check_host.py",
+    "verify_refactor.py"
+  ]
+}

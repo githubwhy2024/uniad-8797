@@ -1,0 +1,126 @@
+{
+  "format": "uniad-planning-export-spec-v1",
+  "project_root": ".",
+  "full_model": {
+    "path": "onnx/resources/model.full.onnx",
+    "sha256": "3b78366c417fef5d1c23221e7356fa77104b5a991cbe4c81aed697bc90bdeff5",
+    "inputs": 23,
+    "outputs": 47
+  },
+  "accepted_model": {
+    "path": "onnx/resources/model.planning.onnx",
+    "sha256": "0202b4e2ce5bff2ce94ef04447efcbbe581c73b54e263d4922aefc44f0c01812"
+  },
+  "initial_state": {
+    "path": "onnx/resources/initial_state.npz",
+    "sha256": "3dab828883a693809fc3dbf2b4b6bfd6030d0ffdb0dca9ae041be46f017b054f",
+    "fields": {
+      "query": {
+        "shape": [
+          1285,
+          512
+        ],
+        "dtype": "float32"
+      },
+      "ref_pts": {
+        "shape": [
+          1285,
+          3
+        ],
+        "dtype": "float32"
+      },
+      "pred_boxes": {
+        "shape": [
+          1285,
+          10
+        ],
+        "dtype": "float32"
+      },
+      "obj_idxes": {
+        "shape": [
+          1285
+        ],
+        "dtype": "int64"
+      },
+      "disappear_time": {
+        "shape": [
+          1285
+        ],
+        "dtype": "int64"
+      },
+      "mem_bank": {
+        "shape": [
+          1285,
+          4,
+          256
+        ],
+        "dtype": "float32"
+      },
+      "mem_padding_mask": {
+        "shape": [
+          1285,
+          4
+        ],
+        "dtype": "bool"
+      },
+      "save_period": {
+        "shape": [
+          1285
+        ],
+        "dtype": "float32"
+      },
+      "track_count": {
+        "shape": [],
+        "dtype": "int64"
+      },
+      "track_valid_mask": {
+        "shape": [
+          1285
+        ],
+        "dtype": "bool"
+      },
+      "prev_bev": {
+        "shape": [
+          40000,
+          1,
+          256
+        ],
+        "dtype": "float32"
+      },
+      "max_obj_id": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    }
+  },
+  "shape_proof": {
+    "path": "onnx/resources/shape_proof.json",
+    "sha256": "446c00500e611d89dd60f05bf70cbeee4755f60d047cd1aaa4446ff2e909920f"
+  },
+  "extent_certificate": {
+    "path": "onnx/resources/extent_certificate.json",
+    "sha256": "ab5b64dee959e4bdcdedbf668454a1063e40030cfbb7c185ca2ddb7d26e215fa"
+  },
+  "collision_optimizer": {
+    "path": "onnx/resources/collision_optimization.py",
+    "sha256": "4aabdc6772953d5dd6ad31e1923a628a3c14b8cb085ad92eb8a95ea2cdf532c3"
+  },
+  "evidence": {
+    "canonical": {
+      "path": "onnx/reference/q3/canonical.completion_audit.json",
+      "sha256": "1a664b2058e17dd139a28c95ad6718d748e4d3925842237f2e2347dc9b3d905a"
+    },
+    "shape": {
+      "path": "onnx/reference/q3/shape.completion_audit.json",
+      "sha256": "8763ae2f99158e42df4f21cbfa21a187a991110489d3bff6935997ef5a8aa81f"
+    },
+    "caller": {
+      "path": "onnx/reference/q3/caller.completion_audit.json",
+      "sha256": "67dc8146f45895e6c5168a6825b79ea6217913db22d8d3430b5228092443f17a"
+    },
+    "mini_metrics": {
+      "path": "onnx/reference/q3/mini_metrics.completion_audit.json",
+      "sha256": "e45669b3de2e8a71693de93c0cb9ab563a133b70f683b2373e4ba6027bfb287b"
+    }
+  }
+}
