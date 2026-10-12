@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "source_model": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-planning-profile-prepare-7cf920a4/prepare/model.planning-runtime-25.onnx",
+  "source_model_sha256": "b0e78e25a5f74ad5e2a021d7c8394913a28ca7011704cfd3e28a3c6a65c3fe25",
+  "derived_model": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-planning-shape-proof-final-6b5d8172/proof/model.planning-shape-certified.onnx",
+  "derived_model_sha256": "0202b4e2ce5bff2ce94ef04447efcbbe581c73b54e263d4922aefc44f0c01812",
+  "changes": "Internal value_info only; all node/initializer/input/output serialization unchanged.",
+  "input_count": 23,
+  "output_count": 25,
+  "node_count": 24839,
+  "all_node_output_extents_proven": true,
+  "proven_node_outputs": 25094,
+  "original_unresolved_metadata": 2577,
+  "unresolved_node_outputs": 0,
+  "shape_control_slots": 7990,
+  "all_control_values_proven_constant": true,
+  "all_actual_control_arithmetic_exact": true,
+  "arithmetic": {
+    "unique_controls": 7731,
+    "operand_slots": 7990,
+    "all_exact": true,
+    "comparison_sha256": "f34543a400512b4fca43f777e98438b8cce57d0ea688c1b6aa025285709dbe25",
+    "model_sha256": "333938204279b378a59bd664c5d2dde2061525abcab53d582f36d20190cd4cfb"
+  },
+  "extent_certificate_sha256": "ab5b64dee959e4bdcdedbf668454a1063e40030cfbb7c185ca2ddb7d26e215fa",
+  "control_values_sha256": "f057e1fb0ab4641d5fa15170404a45c05f3876493054f98df5a8518dc98aa518",
+  "counterexamples_sha256": "aa07f21eb949b868b884436f274a3d37ee87de49e7968b852d37ac7bbb1442c1",
+  "checker_full_check": true,
+  "claim_limit": "Static extent/value-dependency proof and metadata-only candidate; no new full-model ORT session/recurrence or QNN/target acceptance. Existing original graph recurrence remains separate."
+}

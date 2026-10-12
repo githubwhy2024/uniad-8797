@@ -1,0 +1,231 @@
+{
+  "role": "q3_fixed",
+  "refactor_freeze_commit": "5815d68aa831e144d91143fb43ee1cfbacf9767f",
+  "files": {
+    "assets.py": "916c8c54ed74a1f04aeb8509532db2a9b2ef2e59f336bdacdacd301fcaa08035",
+    "attention.py": "2fa5277f4ad34a27004b65b298f0fdf88fbc4ba74e13b1de7579cbe90084cc6c",
+    "check_host.py": "87ffef83811c7be4a7261f26687a35f5bc6d884f78828e046797a74a75387c8e",
+    "dcnv2.py": "4d78248a520e1ba449391ed2f1449bab692a55327719eeea0ca73cef3b261f70",
+    "export.py": "839670b2bee58fc45f679297ea83844db8c2440f2f7d0a77af9403d26181fdc1",
+    "frame_core.py": "24605b679a41ef1b9e321b1bdddcd4ed4f17f4824b15b8e3d80daf8a8d04c22a",
+    "host.py": "a74d650f5e1679277e6492d5c13254dfdfd690d6ad8bc57e3bbbfe2573e941fa",
+    "model_patches.py": "f8987c64294e0c00d14d433acc1a5c6d914b2794da6063822e629c16deb30da2",
+    "prepare_scene.py": "0098c5db47d417c51e73a4ffab1e4e12519ebd26a2a0a6c409720c25322baa28",
+    "state_contract.py": "c21efe092a8a807d144581da0de4fa51408f7ea95f5714a824cd496afe35e774",
+    "temporal.py": "6eadc29683eba18f77720e743a20876f1bf2da88de800ba48be3ab3f273fcc04",
+    "validate.py": "8ae13ed7ae18b6232fd7afbb252dd8c882f742b88bec5222eb76fec0e631c576",
+    "verify_refactor.py": "b304838d428959771c2b38cf8f1e712d1b55d89691a48a34c2829523615f7a99"
+  },
+  "root_uniad_sources": {
+    "projects/mmdet3d_plugin/uniad/dense_heads/track_head.py": "22a0427afb3a7ef81897f6f05a0155dee3db312a9a925635c0517f859cfe1815",
+    "projects/mmdet3d_plugin/uniad/dense_heads/occ_head.py": "e05d9463ca04b4efa3c32f011b3a220bd437758c94846b9f84a60f70ab19f877"
+  },
+  "refactor_original_sha256": {
+    "attention.py": "2fa5277f4ad34a27004b65b298f0fdf88fbc4ba74e13b1de7579cbe90084cc6c",
+    "dcnv2.py": "4d78248a520e1ba449391ed2f1449bab692a55327719eeea0ca73cef3b261f70",
+    "frame_core.py": "14f3abc066f4a0695291ddbf34346c87c3e6378fb56ecbc57361f1bea163c0e1",
+    "model_patches.py": "2b505c6d8b74db7c84daeeec408cc213b36def153347298f6fbd5a963635a497",
+    "temporal.py": "341dd27e6a6a115e06ee350d61cfb1f464b351607285d1b763d8110f9cd3129c",
+    "state_contract.py": "4bf9819337f1b24b06b22d82dfa971f3ea92db4eb7b03ce4dd49c8dced39abc8",
+    "host.py": "27acd2d8985f22888def5b501da410cd65f9140fc3ed53c6c1b599a3a6f1c6c8",
+    "export.py": "258612b544389b38c6c6d1ec1e09cf93b40fa36d38f3ceda4029627e8a497ccd",
+    "assets.py": "6bd95f5c8ceca21f33f29e83fe778d2978b964fbeeaf605a91c7b842d8060515",
+    "prepare_scene.py": "0098c5db47d417c51e73a4ffab1e4e12519ebd26a2a0a6c409720c25322baa28",
+    "validate.py": "66caaa3a8713ca5ecf1e68a6740a1123cbdef5fd4e67fd65542a051516dba150",
+    "check_host.py": "c6351545fe575d2d56a97fdd447fac8afeb9af4476cd5a4de5e158f7d906a0fb",
+    "verify_refactor.py": "e7103781735c43b084881ab7e4929e16275471cdb2c709ed80d7b0435c5cef66"
+  },
+  "relocated_path_only": [
+    "export.py",
+    "host.py",
+    "assets.py",
+    "validate.py",
+    "check_host.py",
+    "verify_refactor.py"
+  ],
+  "source_relocation": {
+    "reference_commit": "8396b961f22b4bcd6f15075d960f75a5de92d283",
+    "retired_files": {
+      "export_fixed.py": "export.py",
+      "graph_compat.py": "export.py",
+      "fixed_host_candidate.py": "host.py"
+    },
+    "scope": "file layout candidate; historical mini acceptance remains reference-only"
+  },
+  "canonical_promotion": {
+    "accepted_candidate_dir": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-occ-matmul-b66435a3/candidate/onnx/fixed",
+    "candidate_manifest_sha256": "5874c2b077167c7038c4ae00ffbae5d1a8987ab4371049d76585c816515aa503",
+    "candidate_files": {
+      "assets.py": "671fbe44632173c80994240d656e1d9f269947e885e1b624a710728eb12b6502",
+      "attention.py": "2fa5277f4ad34a27004b65b298f0fdf88fbc4ba74e13b1de7579cbe90084cc6c",
+      "check_host.py": "87ffef83811c7be4a7261f26687a35f5bc6d884f78828e046797a74a75387c8e",
+      "dcnv2.py": "4d78248a520e1ba449391ed2f1449bab692a55327719eeea0ca73cef3b261f70",
+      "export.py": "afcec5e9e8c95cfa1241a3f9d3ba584fa9300df3262789a9820fc10f14761719",
+      "frame_core.py": "24605b679a41ef1b9e321b1bdddcd4ed4f17f4824b15b8e3d80daf8a8d04c22a",
+      "host.py": "2002592fdd5d4a0a6f40761735e5cf003b3cdd463c1285ad0a5fe627e68da3ee",
+      "model_patches.py": "f07447c478a69294ac5084ca24682806781837f7faa44c4f06cfd36db524499b",
+      "prepare_scene.py": "0098c5db47d417c51e73a4ffab1e4e12519ebd26a2a0a6c409720c25322baa28",
+      "state_contract.py": "c21efe092a8a807d144581da0de4fa51408f7ea95f5714a824cd496afe35e774",
+      "temporal.py": "510eff5caf90812d99d1256922e3001f816c11491946917c5ff57e24c09b4260",
+      "validate.py": "1dbfcedffd295600efcb36aaf8ac37d944e2e7b04db0fc9b86377a77de4bb5d2",
+      "verify_refactor.py": "b304838d428959771c2b38cf8f1e712d1b55d89691a48a34c2829523615f7a99"
+    },
+    "function_rename_map": {
+      "_q3_fixed_get_detections": "_get_detections_with_query_padding_mask",
+      "_q3_occ_mask_matmul": "_compute_occupancy_mask_logits_matmul",
+      "_q3_occ_logits_matmul": "_compute_temporal_occupancy_logits_matmul",
+      "_q3_fixed_occ_forward_matmul": "_forward_occupancy_with_matmul",
+      "_q3_fixed_get_attn_mask": "_build_occupancy_attention_mask",
+      "_q3_fixed_occ_forward_test": "_forward_occupancy_with_fixed_vehicle_slots",
+      "_get_states_and_refs_with_q3_query_mask": "_get_states_and_refs_with_query_padding_mask"
+    },
+    "attribute_rename_map": {
+      "_q3_original_get_detections": "_original_get_detections",
+      "_q3_pending_mask": "_pending_query_padding_mask",
+      "_q3_vehicle_valid_mask": "_occupancy_vehicle_valid_mask",
+      "_q3_original_get_attn_mask": "_original_get_attn_mask",
+      "_q3_original_forward": "_original_occupancy_forward",
+      "_q3_original_forward_test": "_original_occupancy_forward_test",
+      "_q3_agent_valid": "_motion_agent_valid_mask",
+      "_q3_vehicle_count": "_motion_vehicle_count",
+      "_q3_vehicle_valid": "_motion_vehicle_valid_mask",
+      "_q3_vehicle_raw": "_motion_vehicle_count_raw",
+      "_q3_vehicle_overflow": "_motion_vehicle_overflow"
+    },
+    "accepted_metrics_result": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-fixed-mini-task-eval-0e2fbd84/result.json",
+    "accepted_metrics_result_sha256": "c77c3fd9d462eeb00aa677343467e6dc4e8fb4d2622e582ebd1eb9991140704d",
+    "accepted_metrics_audit_sha256": "e45669b3de2e8a71693de93c0cb9ab563a133b70f683b2373e4ba6027bfb287b",
+    "scope": "Accepted source promoted with functional names; canonical export and graph acceptance remain separate."
+  },
+  "canonical_export_integration": {
+    "shape_algorithm_source": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/validation/validate_q3_fixed_shape_graph.py",
+    "shape_algorithm_sha256": "7a74472ffd6e719b2d2469d15d5bcfdb4a248107c20648263228a095880241ca",
+    "shape_function_rename_map": {
+      "dims": "tensor_dimensions",
+      "full": "shape_value_is_complete",
+      "consts": "small_graph_constants",
+      "specialize": "specialize_static_shape_controls",
+      "verify_math_preserved": "verify_shape_specialization_preserves_math"
+    },
+    "preserved_definitions": [
+      "_mock_unused_imports",
+      "build_cfg",
+      "register_onnx_symbolics",
+      "build_model",
+      "write_initial_state_bundle",
+      "make_inputs",
+      "advance",
+      "lower_bool_where",
+      "append_sca_diagnostics",
+      "fixed_inputs",
+      "advance_fixed",
+      "check_outputs",
+      "install_trace_safe_bool_padding",
+      "FixedGraphStep",
+      "write_bundle"
+    ],
+    "accepted_export": {
+      "path": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-fixed-fresh-export-43a8ccdf/export",
+      "result_sha256": "a41b673c6b1750717298d8dd07e3fc10cdb71c79393f96c5ecf6075d05462ce7",
+      "model_sha256": "3b78366c417fef5d1c23221e7356fa77104b5a991cbe4c81aed697bc90bdeff5"
+    },
+    "scope": "CLI acceptance/lifecycle and proven static controls integrated; neural model and compatible lowering definitions unchanged."
+  },
+  "production_promotion": {
+    "status": "accepted_runtime_source_promotion",
+    "previous_fixed_dir": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-production-source-promotion-a98c43e1/previous/onnx/fixed",
+    "previous_manifest_sha256": "044f48d325ef7d06b2ff38dadb99e21a6cce1186187d2ff615cc496e70b7f559",
+    "previous_files": {
+      "assets.py": "671fbe44632173c80994240d656e1d9f269947e885e1b624a710728eb12b6502",
+      "attention.py": "2fa5277f4ad34a27004b65b298f0fdf88fbc4ba74e13b1de7579cbe90084cc6c",
+      "check_host.py": "87ffef83811c7be4a7261f26687a35f5bc6d884f78828e046797a74a75387c8e",
+      "dcnv2.py": "4d78248a520e1ba449391ed2f1449bab692a55327719eeea0ca73cef3b261f70",
+      "export.py": "bb8c1a346655d338583374867865d47c49ebc2cfa6d822f287a7154b9bded4c2",
+      "frame_core.py": "24605b679a41ef1b9e321b1bdddcd4ed4f17f4824b15b8e3d80daf8a8d04c22a",
+      "host.py": "2002592fdd5d4a0a6f40761735e5cf003b3cdd463c1285ad0a5fe627e68da3ee",
+      "model_patches.py": "f8987c64294e0c00d14d433acc1a5c6d914b2794da6063822e629c16deb30da2",
+      "prepare_scene.py": "0098c5db47d417c51e73a4ffab1e4e12519ebd26a2a0a6c409720c25322baa28",
+      "state_contract.py": "c21efe092a8a807d144581da0de4fa51408f7ea95f5714a824cd496afe35e774",
+      "temporal.py": "6eadc29683eba18f77720e743a20876f1bf2da88de800ba48be3ab3f273fcc04",
+      "validate.py": "1dbfcedffd295600efcb36aaf8ac37d944e2e7b04db0fc9b86377a77de4bb5d2",
+      "verify_refactor.py": "b304838d428959771c2b38cf8f1e712d1b55d89691a48a34c2829523615f7a99"
+    },
+    "accepted_candidate_dir": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-production-bundle-candidate-309b6f14/candidate/onnx/fixed",
+    "candidate_manifest_sha256": "778c451fb2f49eec5d7d8e01ec28f6cb2dcedc9ab3a243438828f9e351f9a53b",
+    "candidate_files": {
+      "assets.py": "916c8c54ed74a1f04aeb8509532db2a9b2ef2e59f336bdacdacd301fcaa08035",
+      "attention.py": "2fa5277f4ad34a27004b65b298f0fdf88fbc4ba74e13b1de7579cbe90084cc6c",
+      "check_host.py": "87ffef83811c7be4a7261f26687a35f5bc6d884f78828e046797a74a75387c8e",
+      "dcnv2.py": "4d78248a520e1ba449391ed2f1449bab692a55327719eeea0ca73cef3b261f70",
+      "export.py": "40cc335f2680cb28b2a8a747192fd1a4e22ee81561e107c281d709f2e7adf10f",
+      "frame_core.py": "24605b679a41ef1b9e321b1bdddcd4ed4f17f4824b15b8e3d80daf8a8d04c22a",
+      "host.py": "6caf83b857365e4d010fdfc62f904763b96db5a0a6b89af3b1389e5a4166fa1c",
+      "model_patches.py": "f8987c64294e0c00d14d433acc1a5c6d914b2794da6063822e629c16deb30da2",
+      "prepare_scene.py": "0098c5db47d417c51e73a4ffab1e4e12519ebd26a2a0a6c409720c25322baa28",
+      "state_contract.py": "c21efe092a8a807d144581da0de4fa51408f7ea95f5714a824cd496afe35e774",
+      "temporal.py": "6eadc29683eba18f77720e743a20876f1bf2da88de800ba48be3ab3f273fcc04",
+      "validate.py": "1dbfcedffd295600efcb36aaf8ac37d944e2e7b04db0fc9b86377a77de4bb5d2",
+      "verify_refactor.py": "b304838d428959771c2b38cf8f1e712d1b55d89691a48a34c2829523615f7a99"
+    },
+    "accepted_evidence": {
+      "standalone": {
+        "path": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-production-bundle-recurrence-2b6e451c/completion_audit.json",
+        "sha256": "aa4d704e193ad8037a2277157d48d45498ee052bea9ac1babd3a77a60bb8c127"
+      },
+      "padding": {
+        "path": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-padding-contract-321c2c81/probe/result.json",
+        "sha256": "7492ef49c60d65e5dcd98ddc233d7a7f0bcccc998612eade973e18868a58334f"
+      }
+    },
+    "export_difference": "Only production lineage verifier and dispatch; all accepted model/PT/export definitions retained.",
+    "scope": "Stage-Q3 planning production source. Metrics retained through immutable previous canonical and accepted mini candidate; QNN/target separate."
+  },
+  "review_hardening_promotion": {
+    "status": "accepted_context_and_entrypoint_guard_promotion",
+    "previous_fixed_dir": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-review-hardening-candidate-62a98bc4/previous/onnx/fixed",
+    "previous_manifest_sha256": "6d7a890df3b4016714ec2f0a6cfafca273c43fe4e21f02a0a882d2750b92394a",
+    "previous_files": {
+      "assets.py": "916c8c54ed74a1f04aeb8509532db2a9b2ef2e59f336bdacdacd301fcaa08035",
+      "attention.py": "2fa5277f4ad34a27004b65b298f0fdf88fbc4ba74e13b1de7579cbe90084cc6c",
+      "check_host.py": "87ffef83811c7be4a7261f26687a35f5bc6d884f78828e046797a74a75387c8e",
+      "dcnv2.py": "4d78248a520e1ba449391ed2f1449bab692a55327719eeea0ca73cef3b261f70",
+      "export.py": "52255cab65b67fb2612459f2c859dd7b5422989ce2d3dfb0f84a185fb66e7079",
+      "frame_core.py": "24605b679a41ef1b9e321b1bdddcd4ed4f17f4824b15b8e3d80daf8a8d04c22a",
+      "host.py": "6caf83b857365e4d010fdfc62f904763b96db5a0a6b89af3b1389e5a4166fa1c",
+      "model_patches.py": "f8987c64294e0c00d14d433acc1a5c6d914b2794da6063822e629c16deb30da2",
+      "prepare_scene.py": "0098c5db47d417c51e73a4ffab1e4e12519ebd26a2a0a6c409720c25322baa28",
+      "state_contract.py": "c21efe092a8a807d144581da0de4fa51408f7ea95f5714a824cd496afe35e774",
+      "temporal.py": "6eadc29683eba18f77720e743a20876f1bf2da88de800ba48be3ab3f273fcc04",
+      "validate.py": "1dbfcedffd295600efcb36aaf8ac37d944e2e7b04db0fc9b86377a77de4bb5d2",
+      "verify_refactor.py": "b304838d428959771c2b38cf8f1e712d1b55d89691a48a34c2829523615f7a99"
+    },
+    "accepted_candidate_dir": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-review-hardening-candidate-62a98bc4/candidate/onnx/fixed",
+    "candidate_manifest_sha256": "153e18680e614ea9970a84f237d7d46c38b88b5ec37620fc3e9e0b100acc7420",
+    "candidate_files": {
+      "assets.py": "916c8c54ed74a1f04aeb8509532db2a9b2ef2e59f336bdacdacd301fcaa08035",
+      "attention.py": "2fa5277f4ad34a27004b65b298f0fdf88fbc4ba74e13b1de7579cbe90084cc6c",
+      "check_host.py": "87ffef83811c7be4a7261f26687a35f5bc6d884f78828e046797a74a75387c8e",
+      "dcnv2.py": "4d78248a520e1ba449391ed2f1449bab692a55327719eeea0ca73cef3b261f70",
+      "export.py": "52255cab65b67fb2612459f2c859dd7b5422989ce2d3dfb0f84a185fb66e7079",
+      "frame_core.py": "24605b679a41ef1b9e321b1bdddcd4ed4f17f4824b15b8e3d80daf8a8d04c22a",
+      "host.py": "a0e78ea8267a653941fe1e92a30cc3da43aaae81dc2fc4c24a99e9509053ae07",
+      "model_patches.py": "f8987c64294e0c00d14d433acc1a5c6d914b2794da6063822e629c16deb30da2",
+      "prepare_scene.py": "0098c5db47d417c51e73a4ffab1e4e12519ebd26a2a0a6c409720c25322baa28",
+      "state_contract.py": "c21efe092a8a807d144581da0de4fa51408f7ea95f5714a824cd496afe35e774",
+      "temporal.py": "6eadc29683eba18f77720e743a20876f1bf2da88de800ba48be3ab3f273fcc04",
+      "validate.py": "8ae13ed7ae18b6232fd7afbb252dd8c882f742b88bec5222eb76fec0e631c576",
+      "verify_refactor.py": "b304838d428959771c2b38cf8f1e712d1b55d89691a48a34c2829523615f7a99"
+    },
+    "accepted_evidence": {
+      "path": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-review-hardening-controls-7a30f5d8/controls/result.json",
+      "sha256": "fa6175951a8b602c8583f6c33b0ae919a1b89a7387ef37399831c571bd345361",
+      "script_path": "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/validation/validate_checkpoint_metadata_hardening.py",
+      "script_sha256": "7c22d11f6d7c3b4e4bb27e7fab0ea92875d421d077838d7b6ccd63bab36c9603"
+    },
+    "scope": "Checkpoint metadata load/save semantic validation and explicit rejection of retired dynamic execution routes. Inference/math and accepted graphs unchanged; previous acceptance remains immutable."
+  },
+  "q4_parameterized_collision_solver": {
+    "policy": "Bounded thread-owned 512 cells/horizon, zero-cost padding; original objective/IPOPT/reference guess; complete capacity fallback; source SHA checked each call.",
+    "source": "onnx/fixed/host.py"
+  }
+}

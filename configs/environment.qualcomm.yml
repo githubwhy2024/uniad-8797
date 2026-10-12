@@ -1,0 +1,10 @@
+# Linux/WSL converter environment; SDK installation is separate.
+# Override the environment name with conda env create -n <your-name>.
+name: qualcomm
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r requirements-qualcomm.txt

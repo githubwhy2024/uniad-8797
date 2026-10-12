@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1025" viewBox="0 0 1500 1025" role="img" aria-labelledby="title desc">
+<title id="title">从ONNX模型到主机开发，再到8797板端部署</title>
+<desc id="desc">主机CPU开发链和目标部署链并列；目标部署从逻辑源图选择配置，复用通用规则、状态资源合同及任务参考，重新生成板端产物。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526a7d"/></marker><marker id="reuse" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#168976"/></marker></defs>
+<rect width="1500" height="1025" fill="#ffffff"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif">
+<text x="50" y="45" text-anchor="start" font-size="32" fill="#17324a" font-weight="700">
+<tspan x="50" dy="0">UniAD部署路线图：源模型、主机开发、目标部署</tspan>
+</text>
+<text x="50" y="78" text-anchor="start" font-size="21" fill="#526a7d" font-weight="400">
+<tspan x="50" dy="0">SDK提供共同工具与多种后端；运行时的后端和编译目标需要分别选择。</tspan>
+</text>
+<rect x="50" y="110" width="1400" height="105" rx="14" fill="#eef2f6" stroke="#becbd6"/>
+<text x="74" y="147" text-anchor="start" font-size="26" fill="#17324a" font-weight="600">
+<tspan x="74" dy="0">模型起点：固定容量Stateful ONNX（完整验证47输出／规划25输出）</tspan>
+</text>
+<text x="74" y="183" text-anchor="start" font-size="22" fill="#21374b" font-weight="400">
+<tspan x="74" dy="0">配套：初始状态、输入输出接口、Host规划算法，以及PyTorch／ORT参考</tspan>
+</text>
+<path d="M 375 215 L 375 267" stroke="#526a7d" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1125 215 L 1125 267" stroke="#526a7d" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text x="390" y="246" text-anchor="start" font-size="20" fill="#526a7d" font-weight="400">
+<tspan x="390" dy="0">本机执行与通用优化</tspan>
+</text>
+<text x="1140" y="246" text-anchor="start" font-size="20" fill="#526a7d" font-weight="400">
+<tspan x="1140" dy="0">从源图选择目标规则</tspan>
+</text>
+<rect x="45" y="270" width="650" height="665" rx="18" fill="#f1f7fc" stroke="#d2e3f1"/>
+<rect x="805" y="270" width="650" height="665" rx="18" fill="#fff8ec" stroke="#ecd9b2"/>
+<text x="65" y="306" text-anchor="start" font-size="24" fill="#2165a1" font-weight="600">
+<tspan x="65" dy="0">当前主机／QNN CPU（已完成范围）</tspan>
+</text>
+<text x="825" y="306" text-anchor="start" font-size="24" fill="#976417" font-weight="600">
+<tspan x="825" dy="0">8797目标部署（后续工作）</tspan>
+</text>
+<rect x="65" y="325" width="610" height="85" rx="12" fill="white" stroke="#77a9d0" stroke-width="2"/><text x="87" y="357" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="87" dy="0">1. CPU适配与完整基线</tspan>
+</text><text x="87" y="387" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="87" dy="0">15项适配；完整47输出的81帧任务通过</tspan>
+</text>
+<rect x="825" y="325" width="610" height="85" rx="12" fill="white" stroke="#c6a05e" stroke-width="2"/><text x="847" y="357" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="847" dy="0">1. 确认目标开发组合</tspan>
+</text><text x="847" y="387" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="847" dy="0">SDK／OS／BSP／驱动；后端能力及精度合同</tspan>
+</text>
+<path d="M 375 410 L 375 433" stroke="#526a7d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1130 410 L 1130 433" stroke="#526a7d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="65" y="435" width="610" height="85" rx="12" fill="white" stroke="#77a9d0" stroke-width="2"/><text x="87" y="467" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="87" dy="0">2. 规划图通用优化</tspan>
+</text><text x="87" y="497" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="87" dy="0">减少复制；query流式；冗余删除；不可变共享</tspan>
+</text>
+<rect x="825" y="435" width="610" height="85" rx="12" fill="white" stroke="#c6a05e" stroke-width="2"/><text x="847" y="467" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="847" dy="0">2. 形成目标图和运行配置</tspan>
+</text><text x="847" y="497" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="847" dy="0">逻辑ONNX＋通用规则；布局／分组／块大小</tspan>
+</text>
+<path d="M 375 520 L 375 543" stroke="#526a7d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1130 520 L 1130 543" stroke="#526a7d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="65" y="545" width="610" height="85" rx="12" fill="white" stroke="#77a9d0" stroke-width="2"/><text x="87" y="577" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="87" dy="0">3. 214段规划完整参考</tspan>
+</text><text x="87" y="607" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="87" dy="0">规划25输出的81帧任务指标通过</tspan>
+</text>
+<rect x="825" y="545" width="610" height="85" rx="12" fill="white" stroke="#c6a05e" stroke-width="2"/><text x="847" y="577" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="847" dy="0">3. 生成目标执行产物</tspan>
+</text><text x="847" y="607" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="847" dy="0">QNN转换、目标编译；模型库或适用context</tspan>
+</text>
+<path d="M 375 630 L 375 653" stroke="#526a7d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1130 630 L 1130 653" stroke="#526a7d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="65" y="655" width="610" height="85" rx="12" fill="white" stroke="#77a9d0" stroke-width="2"/><text x="87" y="687" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="87" dy="0">4. 执行架构重组</tspan>
+</text><text x="87" y="717" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="87" dy="0">计时定位；语义分组214→3；资源与Host集成</tspan>
+</text>
+<rect x="825" y="655" width="610" height="85" rx="12" fill="white" stroke="#c6a05e" stroke-width="2"/><text x="847" y="687" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="847" dy="0">4. 接入8797应用</tspan>
+</text><text x="847" y="717" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="847" dy="0">加速器执行NN；板上CPU完成Host和状态管理</tspan>
+</text>
+<path d="M 375 740 L 375 763" stroke="#526a7d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1130 740 L 1130 763" stroke="#526a7d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="65" y="765" width="610" height="85" rx="12" fill="white" stroke="#77a9d0" stroke-width="2"/><text x="87" y="797" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="87" dy="0">5. 当前主机成果</tspan>
+</text><text x="87" y="827" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="87" dy="0">短递推、最小包、项目外运行及来源管理</tspan>
+</text>
+<rect x="825" y="765" width="610" height="85" rx="12" fill="white" stroke="#c6a05e" stroke-width="2"/><text x="847" y="797" text-anchor="start" font-size="23" fill="#17324a" font-weight="600">
+<tspan x="847" dy="0">5. 验收真实目标组合</tspan>
+</text><text x="847" y="827" text-anchor="start" font-size="20" fill="#486173" font-weight="400">
+<tspan x="847" dy="0">连续任务指标、搬运、端到端时延及热稳态</tspan>
+</text>
+<path d="M 675 807 L 749 807 L 749 477 L 824 477" stroke="#168976" stroke-width="3" stroke-dasharray="9 6" fill="none" marker-end="url(#reuse)"/>
+<rect x="701" y="580" width="96" height="143" rx="8" fill="#edf8f4"/>
+<text x="749" y="610" text-anchor="middle" font-size="18" fill="#137362" font-weight="500">
+<tspan x="749" dy="0">复用规则</tspan>
+<tspan x="749" dy="30">状态／资源</tspan>
+<tspan x="749" dy="30">运行合同</tspan>
+<tspan x="749" dy="30">任务参考</tspan>
+</text>
+<text x="65" y="887" text-anchor="start" font-size="22" fill="#2165a1" font-weight="600">
+<tspan x="65" dy="0">当前：通用成果可交接；不追加CPU 81帧</tspan>
+</text>
+<text x="65" y="918" text-anchor="start" font-size="20" fill="#526a7d" font-weight="400">
+<tspan x="65" dy="0">3段完整任务尚未评测；不是板端产物</tspan>
+</text>
+<text x="825" y="887" text-anchor="start" font-size="22" fill="#976417" font-weight="600">
+<tspan x="825" dy="0">目标：新帧最终有效规划持续≥10Hz</tspan>
+</text>
+<text x="825" y="918" text-anchor="start" font-size="20" fill="#526a7d" font-weight="400">
+<tspan x="825" dy="0">目标参数重选、产物重建、板端效果待验收</tspan>
+</text>
+<text x="50" y="976" text-anchor="start" font-size="21" fill="#137362" font-weight="400">
+<tspan x="50" dy="0">虚线表示主机通用成果的复用；当前x86库、CPU三段和历史内存预算不固定为板端配置。</tspan>
+</text>
+</g></svg>

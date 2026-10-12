@@ -1,0 +1,102 @@
+{
+  "status": "pass",
+  "audit_script_sha256": "8d04dd85ad68bb4415124dfbc00b8c70f082912637789392c2dacd85a8b30286",
+  "checks": {
+    "terminal_pass_complete": true,
+    "result_hash_and_pipeline_exact": true,
+    "launch_preflight_driver_hashes": true,
+    "all_current_sources_assets_records_and_native_reuse_bound": true,
+    "metric_source_/home/wangheyao/miniconda3/envs/uniad/lib/python3.9/site-packages/pytorch_lightning/metrics/metric.py": true,
+    "metric_source_/home/wangheyao/projects/uniad_onnx_qualcomm_q3/projects/mmdet3d_plugin/uniad/dense_heads/occ_head_plugin/metrics.py": true,
+    "metric_source_/home/wangheyao/projects/uniad_onnx_qualcomm_q3/projects/mmdet3d_plugin/uniad/dense_heads/planning_head_plugin/planning_metrics.py": true,
+    "frozen_metric_policy_unchanged": true,
+    "four_evaluations_six_comparisons": true,
+    "evaluation_hash_pt/mini_val": true,
+    "evaluation_identity_and_six_tasks_pt/mini_val": true,
+    "evaluation_hash_pt/mini_train": true,
+    "evaluation_identity_and_six_tasks_pt/mini_train": true,
+    "evaluation_hash_ort/mini_val": true,
+    "evaluation_identity_and_six_tasks_ort/mini_val": true,
+    "evaluation_hash_ort/mini_train": true,
+    "evaluation_identity_and_six_tasks_ort/mini_train": true,
+    "comparison_hash_native_vs_pt/mini_val": true,
+    "frozen_policy_replay_exit_native_vs_pt/mini_val": true,
+    "comparison_exact_replay_native_vs_pt/mini_val": true,
+    "32_standard_checks_native_vs_pt/mini_val": true,
+    "legacy_native_raw_unavailable_explicit_native_vs_pt/mini_val": true,
+    "comparison_hash_native_vs_ort/mini_val": true,
+    "frozen_policy_replay_exit_native_vs_ort/mini_val": true,
+    "comparison_exact_replay_native_vs_ort/mini_val": true,
+    "32_standard_checks_native_vs_ort/mini_val": true,
+    "legacy_native_raw_unavailable_explicit_native_vs_ort/mini_val": true,
+    "comparison_hash_pt_vs_ort/mini_val": true,
+    "frozen_policy_replay_exit_pt_vs_ort/mini_val": true,
+    "comparison_exact_replay_pt_vs_ort/mini_val": true,
+    "32_standard_checks_pt_vs_ort/mini_val": true,
+    "raw_available_and_three_pass_pt_vs_ort/mini_val": true,
+    "comparison_hash_native_vs_pt/mini_train": true,
+    "frozen_policy_replay_exit_native_vs_pt/mini_train": true,
+    "comparison_exact_replay_native_vs_pt/mini_train": true,
+    "32_standard_checks_native_vs_pt/mini_train": true,
+    "legacy_native_raw_unavailable_explicit_native_vs_pt/mini_train": true,
+    "comparison_hash_native_vs_ort/mini_train": true,
+    "frozen_policy_replay_exit_native_vs_ort/mini_train": true,
+    "comparison_exact_replay_native_vs_ort/mini_train": true,
+    "32_standard_checks_native_vs_ort/mini_train": true,
+    "legacy_native_raw_unavailable_explicit_native_vs_ort/mini_train": true,
+    "comparison_hash_pt_vs_ort/mini_train": true,
+    "frozen_policy_replay_exit_pt_vs_ort/mini_train": true,
+    "comparison_exact_replay_pt_vs_ort/mini_train": true,
+    "32_standard_checks_pt_vs_ort/mini_train": true,
+    "raw_available_and_three_pass_pt_vs_ort/mini_train": true,
+    "192_standard_and_6_raw_pass": true
+  },
+  "result_sha256": "c77c3fd9d462eeb00aa677343467e6dc4e8fb4d2622e582ebd1eb9991140704d",
+  "standard_checks_passed": 192,
+  "raw_checks_passed": 6,
+  "worst_checks": {
+    "native_vs_pt/mini_val": {
+      "metric": "motion.motion_category.epa_scores.pedestrian",
+      "max_abs_diff": 0.0046860355699527845,
+      "tolerance": 0.02,
+      "fraction_of_tolerance": 0.23430177849763922
+    },
+    "native_vs_ort/mini_val": {
+      "metric": "tracking.amota",
+      "max_abs_diff": 0.0017300152431134475,
+      "tolerance": 0.01,
+      "fraction_of_tolerance": 0.17300152431134475
+    },
+    "pt_vs_ort/mini_val": {
+      "metric": "motion.motion_category.epa_scores.pedestrian",
+      "max_abs_diff": 0.001874414227981125,
+      "tolerance": 0.02,
+      "fraction_of_tolerance": 0.09372071139905624
+    },
+    "native_vs_pt/mini_train": {
+      "metric": "detection.mean_ap",
+      "max_abs_diff": 0.0007215547831971314,
+      "tolerance": 0.01,
+      "fraction_of_tolerance": 0.07215547831971314
+    },
+    "native_vs_ort/mini_train": {
+      "metric": "motion.motion_category.epa_scores.car",
+      "max_abs_diff": 0.0013027001390272241,
+      "tolerance": 0.02,
+      "fraction_of_tolerance": 0.06513500695136121
+    },
+    "pt_vs_ort/mini_train": {
+      "metric": "detection.mean_ap",
+      "max_abs_diff": 0.0008157616948158974,
+      "tolerance": 0.01,
+      "fraction_of_tolerance": 0.08157616948158974
+    }
+  },
+  "frames_per_backend": 404,
+  "split_frames": {
+    "mini_val": 81,
+    "mini_train": 323
+  },
+  "scope": "Saved current-candidate six-task metric comparison acceptance only. Actual tensor exact equality, QNN and target acceptance are separate.",
+  "finished_utc": "2026-10-02T01:11:26Z"
+}

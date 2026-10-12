@@ -1,0 +1,15 @@
+{
+  "platform": "8797",
+  "os": null,
+  "bsp": null,
+  "driver": null,
+  "qairt_sdk_version": null,
+  "toolchain": null,
+  "backend": null,
+  "interface_precision": null,
+  "internal_precision": null,
+  "accumulator_precision": null,
+  "memory_budget_bytes": null,
+  "graph_partition_policy": null,
+  "status": "requires_target_confirmation"
+}

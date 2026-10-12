@@ -1,0 +1,4 @@
+# Existing verified host runtime; Python 3.9.25 / x86_64 Linux.
+# No automatic installation. ARM/target wheels and backend compatibility are Q5.
+numpy==1.22.4
+casadi==3.6.7

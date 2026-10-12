@@ -1,0 +1,92 @@
+{
+  "schema": "uniad-8797-baseline-resources-v1",
+  "release_tag": "q5-baseline-v1",
+  "release_base_url": "https://github.com/githubwhy2024/uniad-8797/releases/download",
+  "resources": {
+    "planning_model": {
+      "path": "onnx/resources/model.planning.onnx",
+      "sha256": "0202b4e2ce5bff2ce94ef04447efcbbe581c73b54e263d4922aefc44f0c01812",
+      "bytes": 459826567
+    },
+    "full_model": {
+      "path": "onnx/resources/model.full.onnx",
+      "sha256": "3b78366c417fef5d1c23221e7356fa77104b5a991cbe4c81aed697bc90bdeff5",
+      "bytes": 509230103
+    },
+    "initial_state": {
+      "path": "onnx/resources/initial_state.npz",
+      "sha256": "3dab828883a693809fc3dbf2b4b6bfd6030d0ffdb0dca9ae041be46f017b054f",
+      "bytes": 1767787
+    },
+    "shape_proof": {
+      "path": "onnx/resources/shape_proof.json",
+      "sha256": "446c00500e611d89dd60f05bf70cbeee4755f60d047cd1aaa4446ff2e909920f",
+      "bytes": 1771
+    },
+    "extent_certificate": {
+      "path": "onnx/resources/extent_certificate.json",
+      "sha256": "ab5b64dee959e4bdcdedbf668454a1063e40030cfbb7c185ca2ddb7d26e215fa",
+      "bytes": 4486590
+    },
+    "collision_optimizer": {
+      "path": "onnx/resources/collision_optimization.py",
+      "sha256": "4aabdc6772953d5dd6ad31e1923a628a3c14b8cb085ad92eb8a95ea2cdf532c3",
+      "bytes": 4891
+    },
+    "checkpoint": {
+      "path": "ckpts/uniad_base_e2e.pth",
+      "sha256": "60d8cdc82b5c3bf2bd18c52992454231f0f8d7427ba686babe89da9f476b1bbe",
+      "bytes": 996774017
+    },
+    "motion_anchor": {
+      "path": "data/others/motion_anchor_infos_mode6.pkl",
+      "sha256": "05c84020204841eb45a1599228e4452b021213a83d8f7a63b40b47531f0cac6b",
+      "bytes": 2805
+    }
+  },
+  "release_assets": [
+    {
+      "name": "model.planning.onnx",
+      "sha256": "0202b4e2ce5bff2ce94ef04447efcbbe581c73b54e263d4922aefc44f0c01812",
+      "bytes": 459826567,
+      "resources": [
+        "planning_model"
+      ]
+    },
+    {
+      "name": "model.full.onnx",
+      "sha256": "3b78366c417fef5d1c23221e7356fa77104b5a991cbe4c81aed697bc90bdeff5",
+      "bytes": 509230103,
+      "resources": [
+        "full_model"
+      ]
+    },
+    {
+      "name": "uniad_base_e2e.pth",
+      "sha256": "60d8cdc82b5c3bf2bd18c52992454231f0f8d7427ba686babe89da9f476b1bbe",
+      "bytes": 996774017,
+      "resources": [
+        "checkpoint"
+      ]
+    },
+    {
+      "name": "baseline-resources-v1.zip",
+      "sha256": "6927dca0faaa92887c45cc3c5806b4ee254fd6adc2b78b41ebcfa408c59c9ff1",
+      "bytes": 1976019,
+      "archive": "zip",
+      "resources": [
+        "initial_state",
+        "shape_proof",
+        "extent_certificate",
+        "collision_optimizer",
+        "motion_anchor"
+      ]
+    }
+  ],
+  "acceptance": {
+    "planning_model": "frozen logical planning reference",
+    "full_model": "frozen full evaluation reference",
+    "selected_three_part_host": "candidate; full task not_evaluated",
+    "target_8797": "not_evaluated"
+  }
+}

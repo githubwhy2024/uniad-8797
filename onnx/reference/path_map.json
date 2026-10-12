@@ -1,0 +1,12 @@
+{
+  "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-canonical-full-export-a67e329b/completion_audit.json": "onnx/reference/q3/canonical.completion_audit.json",
+  "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-planning-shape-proof-final-6b5d8172/completion_audit.json": "onnx/reference/q3/shape.completion_audit.json",
+  "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-planning-caller-recurrence-76a028cd/completion_audit.json": "onnx/reference/q3/caller.completion_audit.json",
+  "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-fixed-mini-task-eval-0e2fbd84/completion_audit.json": "onnx/reference/q3/mini_metrics.completion_audit.json",
+  "/home/wangheyao/projects/uniad_onnx_validation/onnx/runs/full-native-stateful-430e352/evaluation-native-repaired-0aa8718/mini_val/evaluation.json": "onnx/reference/metrics/native/mini_val.json",
+  "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-fixed-mini-task-eval-0e2fbd84/evaluation/pt/mini_val/evaluation.json": "onnx/reference/metrics/pt/mini_val.json",
+  "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-fixed-mini-task-eval-0e2fbd84/evaluation/ort/mini_val/evaluation.json": "onnx/reference/metrics/ort/mini_val.json",
+  "/home/wangheyao/projects/uniad_onnx_validation/onnx/runs/full-native-stateful-430e352/evaluation-native-repaired-0aa8718/mini_train/evaluation.json": "onnx/reference/metrics/native/mini_train.json",
+  "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-fixed-mini-task-eval-0e2fbd84/evaluation/pt/mini_train/evaluation.json": "onnx/reference/metrics/pt/mini_train.json",
+  "/home/wangheyao/projects/uniad_onnx_qualcomm_q3/onnx/runs/q3-fixed-mini-task-eval-0e2fbd84/evaluation/ort/mini_train/evaluation.json": "onnx/reference/metrics/ort/mini_train.json"
+}
